@@ -20,7 +20,7 @@ perimetroCuadrado()
 console.log(
     "El périmetro de mi cuadrado es: " 
     + perimetroCuadrado 
-    + "cms"
+    + "cms
 );
 */
 
@@ -173,6 +173,41 @@ console.log(
 */
 console.groupEnd();
 
+//Aquí interractuamos con el html
 
+/*
+
+function calcularPerimetroCuadrado() {
+    const input = document.getElementById("InputCuadrado");
+    const value = input.value;
+  
+    const perimetro = perimetroCuadrado(value);
+    alert(perimetro);
+  }
+
+function calcularAreaCuadrado(){
+    const input = document.getElementById("InputCuadrado");
+    const value = input.value;
+    const area = areaCuadrado(value);
+    alert(area);
+    
+}
+
+*/
+
+function calcularPerimetroCuadrado(){
+    const input = document.getElementById("inputCuadrado");
+    const value = input.value;
+    const perimetro = perimetroCuadrado(value);
+    alert(perimetro);
+
+}
+
+function calcularAreaCuadrado(){
+    const input = document.getElementById("inputCuadrado");
+    const value = input.value;
+    const area = areaCuadrado(value);
+    alert(area);
+}
 
 

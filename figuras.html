@@ -7,9 +7,19 @@
     <title>Figuras Geométricas | Curso Práctico de Javascript en Platzi</title>
 </head>
 <body>
-    <h1>
-        Figuras Geométricas
-    </h1>
+    <header>
+        <h1>Figuras Geométricas</h1>
+        <p>Este es el primer taller del curso práctico de Javascript</p>
+    </header>
+    <secion>
+        <h2>Calcula el área y perímetro de un cuadrado</h2>
+        <form>
+            <label for="inputCuadrado">Escribe cuanto mide un lado del cuadrado:</label>
+            <input id="inputCuadrado" type="number"/>
+            <button type="button" onclick="calcularPerimetroCuadrado()">Calcular el Perimetro</button>
+            <button type="button" onclick="calcularAreaCuadrado()">Calcular Area de cuadrado</button>
+        </form>
+    </secion>
     <script src="./figuras.js"></script>
 </body>
 
