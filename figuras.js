@@ -238,6 +238,25 @@ function calcularAreaTriangulo(){
 
 }
 
+function calcularAlturaTrianguloIso(){
+    const input1 = document.getElementById("inputLado1Triangulo");
+    const value1 = parseInt(input1.value);
+    const input2 = document.getElementById("inputLado2Triangulo");
+    const value2 = parseInt(input2.value);
+    const input3 = document.getElementById("inputBaseTraingulo")
+    const value3 = parseInt(input3.value);
+
+    if (value1 != value2  ){
+        console.error("Los lados 1 y 2 no son iguales")
+        alert("Para calcular la altura los lados deben 1 y 2 deben ser iguales ")
+        
+    }else{
+        const altura = parseInt((Math.sqrt((Math.pow(value1,2))-(Math.pow(value3,2)/2))));
+        alert("La altura del Triangulo Isosceles es: " + altura + "cms");
+        
+    }
+}
+
 //Cálculo de circulo
 
 function calcularCircunferencia(){
