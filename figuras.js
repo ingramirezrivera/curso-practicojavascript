@@ -255,3 +255,4 @@ function calcularAreaCirculo(){
     const area = areaCirculo(value);
     alert(area);
 }
+
