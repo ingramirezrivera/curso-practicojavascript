@@ -1,7 +1,9 @@
 
 
 //definimos el array
-const lista1 = [100,200,600,500,400000000];
+const lista1 = [
+
+];
 
 
 //Funcion para añadir numeros a la lista
@@ -56,36 +58,44 @@ function calculoPromedio(){
 
 }
 
-
-
-
-
-
 //CALCULO DE MEDIANA
 
-const mitadLista = lista1.length /2;
-let mediana;
+let medianaPar;
+let medianaImpar;
 
-function esPar(numero){
-    if (numero % 2 === 0){
-        const rut = numero % 2;
-        return true;
-    }else{
-        return false;
+function calcularMediana(){
+    const mitadLista = parseInt(lista1.length /2);
+    
+    function esPar(numero){
+        if (numero % 2 == 0){
+            return true;
+        }else{
+            return false;
+        }
     }
+
+    let number1 = lista1[mitadLista - 1];
+    let number2 = lista1[mitadLista];
+
+    if(esPar(parseInt(lista1.length))){
+        const promediNum1y2 = parseInt((number1 + number2) / 2);
+        let medianaPar = promediNum1y2;
+    
+        return document.getElementById("resultadoMediana").innerHTML = "El resultado de la mediana es: " + medianaPar;
+
+
+    }else{
+        let medianaImpar = lista1[mitadLista]
+        
+        return document.getElementById("resultadoMediana").innerHTML = "El resultado de la mediana es: " + medianaImpar;  
+    }
+    
 }
 
 
-if(esPar(parseInt(lista1.length))){
-    //promedio
-    //mediana
 
 
-}else{
-    mediana = lista1[mitadLista]
 
+  
 
-}
-    //posicion mitad de lista 1
-    //mediana
 
