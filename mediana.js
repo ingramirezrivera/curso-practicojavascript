@@ -1,7 +1,7 @@
 
 
 //definimos el array
-const lista1 = [];
+const lista1 = [100,200,600,500,400000000];
 
 
 //Funcion para añadir numeros a la lista
@@ -55,4 +55,37 @@ function calculoPromedio(){
     return document.getElementById("resultadoPromedio").innerHTML = "El promedio de la lista ingresada es: " + promedio;
 
 }
+
+
+
+
+
+
+//CALCULO DE MEDIANA
+
+const mitadLista = lista1.length /2;
+let mediana;
+
+function esPar(numero){
+    if (numero % 2 === 0){
+        const rut = numero % 2;
+        return true;
+    }else{
+        return false;
+    }
+}
+
+
+if(esPar(parseInt(lista1.length))){
+    //promedio
+    //mediana
+
+
+}else{
+    mediana = lista1[mitadLista]
+
+
+}
+    //posicion mitad de lista 1
+    //mediana
 
