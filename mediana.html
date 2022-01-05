@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Calculo de la Mediana</h1>
+    </header>
+    <section>
+        <form id="dataInput">
+            <label for="idnumber">Ingresa un número a la lista</label>
+            <input id="inputNumber" type="number">
+            <br>
+            <br>
+            <button type="button" onclick="añadirNumeroALista()" >Añadir número</button>
+            <br>
+            <br>
+            <button type="button" onclick="borrarArray()">Borrar lista</button>
+            <h2>Tu lista de números</h2>
+            <hr>
+            <p id="arrayOutput"></p>
+            <hr>
+            <button type="button" onclick="ordenarArray()">Ordenar Lista</button>
+            
+        </form>
+    </section>
+    <br>
+    <hr>
+    <section id="calculadora"></section>
+        <h2>Calculadora de promedio, mediana </h2>
+        <form>
+            <button id="calcularMedia" type="button" onclick="calculoPromedio()">Calcular el promedio</button>
+            <p id="resultadoPromedio"></p>
+            <button type="button" id="calculaMediana" onclick="calcularMediana()">Calcular mediana</button>
+            <p id="resultadoMediana"></p>
+        </form>
+       
+    <script src="./mediana.js"></script>
+</body>
+</html>
